@@ -1,0 +1,28 @@
+#Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+#Virtual environments
+.venv
+
+#Platform-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+UserInterfaceState.xcuserstate
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+#Project
+.env
+/scripts/secrets
+*.zip
+*.gz
+*.xlsx
+*.tar

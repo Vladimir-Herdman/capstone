@@ -22,6 +22,8 @@ ehthumbs_vista.db
 #Project
 .env
 /scripts/secrets
+data/raw/*
+data/zips/*
 *.zip
 *.gz
 *.xlsx

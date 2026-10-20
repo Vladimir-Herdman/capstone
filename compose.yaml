@@ -6,7 +6,7 @@ services:
     stdin_open: true   # same as -i
     tty: true          # same as -t
     volumes:
-      - ./data/zips:/home/capstone/data/zips:ro  #bind mount: your zips on the host. ro for read only.
+      - ./data/zips:/home/capstone/data/zips     #bind mount: your zips on the host.
       - ./data/raw:/home/capstone/data/raw       #bind mount: extracted CSVs, shared both ways.
       - ./scripts:/home/capstone/scripts
       - ./src:/home/capstone/src

@@ -15,7 +15,7 @@ RUN adduser \
 RUN mkdir -p /home/capstone/data /home/capstone/data/zips /home/capstone/data/raw /home/capstone/data/mysql /home/capstone/scripts /home/capstone/src
 RUN chown -R user:user /home/capstone
 
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY ./scripts/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 USER user

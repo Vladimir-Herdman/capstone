@@ -1,0 +1,21 @@
+order_id,customer_name,email,product,category,quantity,unit_price,order_date,shipped,rating
+1001,Ann Carter,ann.carter@example.com,Wireless Mouse,Electronics,2,24.99,2026-01-05,true,5
+1002,Bob Lee,bob.lee@example.com,Desk Lamp,Home,1,39.50,2026-01-06,true,4
+1003,Cy Ortiz,cy.ortiz@example.com,Notebook Pack,Office,5,12.75,2026-01-07,true,
+1004,Dana Kim,dana.kim@example.com,USB-C Cable,Electronics,3,9.99,2026-01-09,false,3
+1005,Eli Brown,eli.brown@example.com,Coffee Mug,Home,4,8.25,2026-01-10,true,5
+1006,Faye Nguyen,faye.nguyen@example.com,Standing Desk,Furniture,1,329.00,2026-01-12,true,4
+1007,Gus Patel,gus.patel@example.com,Ballpoint Pens,Office,10,1.99,2026-01-13,true,4
+1008,Hana Sato,hana.sato@example.com,Bluetooth Speaker,Electronics,1,59.95,2026-01-15,false,
+1009,Ian Murphy,ian.murphy@example.com,Throw Blanket,Home,2,34.00,2026-01-16,true,5
+1010,Jo Rivera,jo.rivera@example.com,Office Chair,Furniture,1,189.99,2026-01-18,true,2
+1011,Kai Johnson,kai.johnson@example.com,Webcam,Electronics,1,74.50,2026-01-20,true,4
+1012,Lena Fischer,lena.fischer@example.com,Sticky Notes,Office,6,3.49,2026-01-21,true,5
+1013,Max Dubois,max.dubois@example.com,Wall Clock,Home,1,22.00,2026-01-23,false,
+1014,Nia Williams,nia.williams@example.com,Bookshelf,Furniture,1,119.00,2026-01-25,true,4
+1015,Omar Haddad,omar.haddad@example.com,Mechanical Keyboard,Electronics,1,89.99,2026-01-26,true,5
+1016,Pia Larsen,pia.larsen@example.com,Desk Organizer,Office,2,15.25,2026-01-28,true,3
+1017,Quinn Foster,quinn.foster@example.com,Scented Candle,Home,3,14.50,2026-01-29,true,4
+1018,Rosa Alvarez,rosa.alvarez@example.com,Monitor Stand,Furniture,1,45.00,2026-01-30,false,
+1019,Sam Okafor,sam.okafor@example.com,Phone Charger,Electronics,2,19.99,2026-02-01,true,4
+1020,Tess Walker,tess.walker@example.com,Stapler,Office,1,11.99,2026-02-02,true,5

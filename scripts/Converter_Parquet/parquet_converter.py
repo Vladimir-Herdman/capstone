@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-
 # Convert CSV and JSON files to Parquet format
 
 # Usage:
-#    python to_parquet.py data.csv
-#    python to_parquet.py data.json -o out/ --compression zstd
-#    python to_parquet.py ./raw_data/ -o ./parquet_data/
+#    python parquet_converter.py data.csv
+#    python parquet_converter.py data.json -o out/ --compression zstd
+#    python parquet_converter.py ./raw_data/ -o ./parquet_data/
 
-#Install dependency:
+# Install dependency:
  #   pip install pyarrow
 
 

@@ -1,17 +1,44 @@
 services:
+  db:
+    image: mysql:8.4
+    container_name: capstone-db
+    command: >
+      --local-infile=1
+      --mysql-native-password=ON
+      --authentication-policy=mysql_native_password
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: capstone
+      MYSQL_USER: capstone
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - capstone-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -uroot -p\"$$MYSQL_ROOT_PASSWORD\" --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
   capstone:
     build: .
     image: oclc
     container_name: capstone
     stdin_open: true   # same as -i
     tty: true          # same as -t
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_NAME: capstone
+      DB_USER: capstone
+      DB_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
       - ./data/zips:/home/capstone/data/zips     #bind mount: your zips on the host.
       - ./data/raw:/home/capstone/data/raw       #bind mount: extracted CSVs, shared both ways.
       - ./scripts:/home/capstone/scripts
       - ./src:/home/capstone/src
-      - capstone-db:/home/capstone/data/mysql    #named volume: database.
 
 volumes:
   capstone-db:
-

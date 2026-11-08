@@ -1,10 +1,15 @@
 # Setup
 ## Docker Container
-To build the container:
-- `docker compose up -d --build`
-
-To run the container:
-- `docker compose exec capstone bash`
+To build and then run the container:
+```bash
+docker compose up -d --build
+docker compose exec capstone bash
+```
+## MySql
+Once within the container, run the following to connect to the mysql container:
+```bash
+mariadb -h db -u "$DB_USER" -p"$DB_PASSWORD" "$DB_NAME"
+```
 ## Data
 Make sure all dropbox files are in the `/data/zips` directory. Then, once
 inside the docker container and in the `capstone` project directory, run:

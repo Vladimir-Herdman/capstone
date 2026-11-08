@@ -16,7 +16,6 @@ RUN adduser \
 RUN mkdir -p /home/capstone/data       \
              /home/capstone/data/zips  \
              /home/capstone/data/raw   \
-             /home/capstone/data/mysql \
              /home/capstone/scripts    \
              /home/capstone/src
 RUN chown -R user:user /home/capstone

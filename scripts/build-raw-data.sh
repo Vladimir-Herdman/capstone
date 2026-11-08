@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source "$(dirname "$0")/utils.sh"
+
 EXPECTED_FILES=(
     'part_aa Gary Varney'
     'part_ab Gary Varney'
@@ -11,13 +13,6 @@ EXPECTED_FILES=(
     'PurePerformanceData Garay Varney.zip'
     'vm_perf_1yr_prod Gary Varney.zip'
 )
-
-get_base_path() {
-    local p
-    p="$(pwd)"
-    p="${p%%capstone*}capstone"
-    printf "%s" "$p"
-}
 
 missing_files() {
     local zippath="$1"

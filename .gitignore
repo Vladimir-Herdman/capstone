@@ -28,3 +28,6 @@ data/zips/*
 *.gz
 *.xlsx
 *.tar
+
+#Script-specific files
+.*info
